@@ -31,6 +31,9 @@ Because Vue uses the "dotenv" package and automatically imports variables that s
 VUE_APP_CSRF_TOKEN_ENDPOINT=/v1/user/token
 ```
 
+Note that for your built app to be portable across site environment, this should be a root relative URL (e.g. not absolute, start with /).
+
+
 ### Set up for OAuth2/OIDC "password" aka "Client Credentials" flow
 
 This library currently supports the "password" grant type, also known as "Client Credentials" or "Resource Owner" authentication flow.
@@ -109,7 +112,7 @@ VUE_APP_CLIENT_SECRET='averysecretpassword'
 import Vue from 'vue';
 import Vuex from 'vuex';
 import { mapResourceModules } from '@freelock/reststate-vuex';
-import { createClient, loginUserCredentials } from '../auth';
+import { createClient, loginUserCredentials } from '@freelock/vue-drupal-auth';
 
 // get a generic Axios client for arbitrary rest calls
 const restClient = createClient();
