@@ -1,0 +1,31 @@
+{
+  "name": "@freelock/vue-drupal-auth",
+  "version": "1.0.0-alpha1",
+  "description": "A utility to handle data access from a Vue app to a Drupal site via JSON:API or REST",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/freelock/vue-drupal-auth.git"
+  },
+  "keywords": [
+    "vue",
+    "vuex",
+    "drupal",
+    "oauth2",
+    "openid_connect",
+    "csrf"
+  ],
+  "author": "John Locke <john@freelock.com>",
+  "license": "Apache License 2.0",
+  "bugs": {
+    "url": "https://github.com/freelock/vue-drupal-auth/issues"
+  },
+  "homepage": "https://github.com/freelock/vue-drupal-auth#readme",
+  "dependencies": {
+    "axios": "^0.26.1",
+    "axios-auth-refresh": "^3.2.2"
+  }
+}
